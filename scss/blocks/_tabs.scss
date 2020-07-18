@@ -1,0 +1,38 @@
+.tabs {
+    height: 60px;
+    margin-bottom: 30px;
+    padding-left: 41px;
+    padding-right: 41px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.tabs__btn {
+    height: 100%;
+    margin-right: 49px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #808080;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 60px;
+    outline: none;
+    cursor: pointer;
+    
+    transition: color 0.2s ease-in;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        color: $blue;
+    }
+}
+
+.tabs__btn--active{
+    border-bottom: 2px solid $blue;
+    color: $blue;
+}

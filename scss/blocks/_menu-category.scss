@@ -1,0 +1,115 @@
+.menu-category{
+    height: 100%;
+}
+
+.menu-category__button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg{
+        fill: gray;
+        transition: fill 0.2s ease-in;
+    }
+
+    &:hover{
+        .menu-category__button-title{
+            color:$blue;
+        }
+
+        svg{
+            fill:$blue;
+        }
+    }
+}
+
+.menu-category__button-icon {
+    margin-right: 22px;
+}
+
+.menu-category__button-title {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+
+    transition: color 0.2s ease-in;
+}
+
+.menu-category__dropdown{
+    display: none;
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: 60px;
+
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 2px solid #f5f5f5;
+    border-radius: 0 0 4px 4px;
+    z-index: 2;
+}
+
+.menu-category:hover{
+
+    .menu-category__dropdown{
+        display: block;
+    }
+}
+
+.menu-category__dropdown-item{
+    position: relative;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    // padding-left: 32px;
+    // padding-right: 32px;
+    border-bottom: 2px solid #f5f5f5;
+
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    
+    transition: background-color 0.2s ease-in;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover{
+        background-color: #f5f5f5;
+    }
+
+    a{
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        text-decoration: none;
+        color: #808080;
+
+        transition: color 0.2s ease-in;
+
+        &:before{
+            content: "";
+            display: block;
+            width: 6px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translate(0, -50%);
+            background-image: url("/img/icon/right-arrow_icon.svg");
+        }
+
+        &:hover{
+            color:$blue;
+        }
+    }
+}

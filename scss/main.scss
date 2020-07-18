@@ -1,0 +1,26 @@
+// Base
+@import "./base/base";
+@import "./base/variables";
+@import "./base/mixins";
+
+//Blocks
+@import "./blocks/header";
+@import "./blocks/header-select";
+@import "./blocks/header-link";
+@import "./blocks/header-main-bar";
+@import "./blocks/menu-category";
+@import "./blocks/header-list-category";
+@import "./blocks/help-menu";
+@import "./blocks/main-slaider";
+@import "./blocks/info";
+@import "./blocks/teaser-row";
+@import "./blocks/catalog";
+@import "./blocks/catalog-items";
+@import "./blocks/catalog-item";
+@import "./blocks/navigation";
+@import "./blocks/info-block";
+@import "./blocks/tabs";
+@import "./blocks/footer";
+@import "./blocks/nav-footer";
+@import "./blocks/socials";
+@import "./blocks/payment";

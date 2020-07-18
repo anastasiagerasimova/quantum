@@ -1,0 +1,23 @@
+.payment {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.payment__item{
+    width: 48px;
+    height: 30px;
+    margin-right: 20px;
+    list-style: none;
+    overflow: hidden;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

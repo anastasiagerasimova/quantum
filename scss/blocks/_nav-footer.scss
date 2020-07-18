@@ -1,0 +1,60 @@
+// .nav-footer {
+// }
+
+.nav-footer__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav-footer__list-item {
+    margin-right: 60px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.nav-footer__link{
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+
+    &:hover{
+        color: $blue;
+
+        svg{
+            fill: #666666;
+            transition: fill 0.2s ease-in;
+    
+            &:hover{
+                fill: $blue;
+            }
+        }
+    }
+}
+
+.nav-footer__link--dropdown{
+    display: flex;
+    align-items: center;
+
+    span{
+        display: flex;
+        padding-left: 10px;
+    }
+
+    svg{
+        fill: #666666;
+        transition: fill 0.2s ease-in;
+    }
+
+    &:hover{
+        svg{
+            fill: $blue;
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+.socials {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.socials__item {
+    list-style: none;
+    margin-right: 34px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.socials__link{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+        fill: #666666;
+        transition: fill 0.2s ease-in;
+
+        &:hover{
+            fill: $blue;
+        }
+    }
+}

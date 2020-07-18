@@ -1,0 +1,123 @@
+.help-menu {
+    position: relative;
+    height: 100%;
+    width: 105px;
+}
+
+.help-menu:hover{
+
+    .help-menu__dropdown{
+        display: block;
+    }
+}
+
+.help-menu__button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg{
+        fill: #b3b3b3;
+        transition: fill 0.2s ease-in;
+    }
+
+    &:hover{
+        .help-menu__button-title{
+            color:$blue;
+        }
+
+        svg{
+            fill:$blue;
+        }
+    }
+}
+
+.help-menu__button-title {
+    // position: relative;
+
+    width: auto;
+    padding-right: 19px;
+
+    color: #b3b3b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+
+    transition: color 0.2s ease-in;
+
+    // &:after{
+    //     position: absolute;
+    //     right: 0px;
+    //     top: 50%;
+    //     transform: translate(0, -50%);
+
+    //     content: "";
+    //     display: inline-block;
+    //     width: 8px;
+    //     height: 5px;
+    //     background-image: url("./../img/icon/arrow_icon.svg");
+    // }
+}
+
+.help-menu__button-icon{
+    display: flex;
+}
+
+.help-menu__dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -2px;
+
+    width: 216px;
+
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 2px solid #f5f5f5;
+    border-radius: 0 0 4px 4px;
+    z-index: 3;  
+}
+
+.help-menu__dropdown-item {
+    list-style: none;
+    // padding-left: 28px;
+    // padding-right: 28px;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    border-bottom: 2px solid #f5f5f5;
+
+    color: #808080;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+
+    transition: background-color 0.2s ease-in;
+
+    &:last-child{
+        border-bottom: none;
+    }
+    
+    &:hover{
+        background-color: #f5f5f5;
+    }
+    
+
+    a{
+        display: block;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        color: #808080;
+        transition: color 0.2s ease-in;
+
+        &:hover{
+            color:$blue;
+        }
+    }
+}

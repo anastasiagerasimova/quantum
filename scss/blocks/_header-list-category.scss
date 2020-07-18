@@ -1,0 +1,31 @@
+.header-list-category {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-list-category__item {
+    margin-right: 35px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    a{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: #808080;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover{
+            color:$blue;
+        }
+    }
+}
